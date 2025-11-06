@@ -1,0 +1,303 @@
+Gizmo {
+ name CustomNotes
+ help "Write your own notes for each shot or timeline."
+ addUserKnob {20 notes_tab l Notes}
+ addUserKnob {6 burnIn_color_panelDropped l "panel dropped state" -STARTLINE +HIDDEN}
+ addUserKnob {7 burnIn_opacity l opacity t "The text opacity"}
+ burnIn_opacity 1
+ addUserKnob {7 burnIn_xPadding l x-padding t "The distance between the Burn-in text and the left and right image borders" R 10 100}
+ burnIn_xPadding 30
+ addUserKnob {7 burnIn_yPadding l y-padding t "The distance between the Burn-in text and the top and bottom image borders" R 10 100}
+ burnIn_yPadding 30
+ addUserKnob {84 burnIn_font l font}
+ addUserKnob {7 burnIn_textScale l "text scale" R 0 2}
+ burnIn_textScale 0.75
+ addUserKnob {26 ""}
+ addUserKnob {26 ""}
+ addUserKnob {1 topLeft l "top left"}
+ addUserKnob {41 color T Text_TL.color}
+ addUserKnob {12 TLpositionOffset l "position offset"}
+ addUserKnob {22 col_TL l "<font color=\"yellow\">⬤</font>" T "nuke.thisNode().knob(\"color\").setValue(\[0.87, 1.0, 0, 1.0])" +STARTLINE}
+ addUserKnob {22 _1 l "<font color=\"purple\">⬤</font>" -STARTLINE T "nuke.thisNode().knob(\"color\").setValue(\[0.87, 0, 1, 1.0])"}
+ addUserKnob {22 _2 l "<font color=\"green\">⬤</font>" -STARTLINE T "nuke.thisNode().knob(\"color\").setValue(\[0, 1.0, 0.25, 1.0])"}
+ addUserKnob {22 _3 l "<font color=\"red\">⬤</font>" -STARTLINE T "nuke.thisNode().knob(\"color\").setValue(\[1, 0, 0, 1.0])"}
+ addUserKnob {22 _4 l "<font color=\"orange\">⬤</font>" -STARTLINE T "nuke.thisNode().knob(\"color\").setValue(\[1, 0.75, 0, 1.0])"}
+ addUserKnob {26 ""}
+ addUserKnob {1 topMiddle l "top middle"}
+ addUserKnob {41 color_1 l color T Text_TM.color}
+ addUserKnob {12 TMpositionOffset l "position offset"}
+ addUserKnob {22 col_TL1 l "<font color=\"yellow\">⬤</font>" T "nuke.thisNode().knob(\"color_1\").setValue(\[0.87, 1.0, 0, 1.0])" +STARTLINE}
+ addUserKnob {22 _11 l "<font color=\"purple\">⬤</font>" -STARTLINE T "nuke.thisNode().knob(\"color_1\").setValue(\[0.87, 0, 1, 1.0])"}
+ addUserKnob {22 _21 l "<font color=\"green\">⬤</font>" -STARTLINE T "nuke.thisNode().knob(\"color_1\").setValue(\[0, 1.0, 0.25, 1.0])"}
+ addUserKnob {22 _31 l "<font color=\"red\">⬤</font>" -STARTLINE T "nuke.thisNode().knob(\"color_1\").setValue(\[1, 0, 0, 1.0])"}
+ addUserKnob {22 _41 l "<font color=\"orange\">⬤</font>" -STARTLINE T "nuke.thisNode().knob(\"color_1\").setValue(\[1, 0.75, 0, 1.0])"}
+ addUserKnob {26 ""}
+ addUserKnob {1 topRight l "top right"}
+ addUserKnob {41 color_2 l color T Text_TR.color}
+ addUserKnob {12 TRpositionOffset l "position offset"}
+ addUserKnob {22 col_2 l "<font color=\"yellow\">⬤</font>" T "nuke.thisNode().knob(\"color_2\").setValue(\[0.87, 1.0, 0, 1.0])" +STARTLINE}
+ addUserKnob {22 _12 l "<font color=\"purple\">⬤</font>" -STARTLINE T "nuke.thisNode().knob(\"color_2\").setValue(\[0.87, 0, 1, 1.0])"}
+ addUserKnob {22 _22 l "<font color=\"green\">⬤</font>" -STARTLINE T "nuke.thisNode().knob(\"color_2\").setValue(\[0, 1.0, 0.25, 1.0])"}
+ addUserKnob {22 _32 l "<font color=\"red\">⬤</font>" -STARTLINE T "nuke.thisNode().knob(\"color_2\").setValue(\[1, 0, 0, 1.0])"}
+ addUserKnob {22 _42 l "<font color=\"orange\">⬤</font>" -STARTLINE T "nuke.thisNode().knob(\"color_2\").setValue(\[1, 0.75, 0, 1.0])"}
+ addUserKnob {26 ""}
+ addUserKnob {1 bottomLeft l "bottom left"}
+ addUserKnob {41 color_3 l color T Text_BL.color}
+ addUserKnob {12 BLpositionOffset l "position offset"}
+ addUserKnob {22 col_3 l "<font color=\"yellow\">⬤</font>" T "nuke.thisNode().knob(\"color_3\").setValue(\[0.87, 1.0, 0, 1.0])" +STARTLINE}
+ addUserKnob {22 _13 l "<font color=\"purple\">⬤</font>" -STARTLINE T "nuke.thisNode().knob(\"color_3\").setValue(\[0.87, 0, 1, 1.0])"}
+ addUserKnob {22 _23 l "<font color=\"green\">⬤</font>" -STARTLINE T "nuke.thisNode().knob(\"color_3\").setValue(\[0, 1.0, 0.25, 1.0])"}
+ addUserKnob {22 _33 l "<font color=\"red\">⬤</font>" -STARTLINE T "nuke.thisNode().knob(\"color_3\").setValue(\[1, 0, 0, 1.0])"}
+ addUserKnob {22 _43 l "<font color=\"orange\">⬤</font>" -STARTLINE T "nuke.thisNode().knob(\"color_3\").setValue(\[1, 0.75, 0, 1.0])"}
+ addUserKnob {26 ""}
+ addUserKnob {1 bottomMiddle l "bottom middle"}
+ addUserKnob {41 color_4 l color T Text_BM.color}
+ addUserKnob {12 BMpositionOffset l "position offset"}
+ addUserKnob {22 col_4 l "<font color=\"yellow\">⬤</font>" T "nuke.thisNode().knob(\"color_4\").setValue(\[0.87, 1.0, 0, 1.0])" +STARTLINE}
+ addUserKnob {22 _14 l "<font color=\"purple\">⬤</font>" -STARTLINE T "nuke.thisNode().knob(\"color_4\").setValue(\[0.87, 0, 1, 1.0])"}
+ addUserKnob {22 _24 l "<font color=\"green\">⬤</font>" -STARTLINE T "nuke.thisNode().knob(\"color_4\").setValue(\[0, 1.0, 0.25, 1.0])"}
+ addUserKnob {22 _34 l "<font color=\"red\">⬤</font>" -STARTLINE T "nuke.thisNode().knob(\"color_4\").setValue(\[1, 0, 0, 1.0])"}
+ addUserKnob {22 _44 l "<font color=\"orange\">⬤</font>" -STARTLINE T "nuke.thisNode().knob(\"color_4\").setValue(\[1, 0.75, 0, 1.0])"}
+ addUserKnob {26 ""}
+ addUserKnob {1 bottomRight l "bottom right"}
+ addUserKnob {41 color_5 l color T Text_BR.color}
+ addUserKnob {12 BRpositionOffset l "position offset"}
+ addUserKnob {22 col_5 l "<font color=\"yellow\">⬤</font>" T "nuke.thisNode().knob(\"color_5\").setValue(\[0.87, 1.0, 0, 1.0])" +STARTLINE}
+ addUserKnob {22 _15 l "<font color=\"purple\">⬤</font>" -STARTLINE T "nuke.thisNode().knob(\"color_5\").setValue(\[0.87, 0, 1, 1.0])"}
+ addUserKnob {22 _25 l "<font color=\"green\">⬤</font>" -STARTLINE T "nuke.thisNode().knob(\"color_5\").setValue(\[0, 1.0, 0.25, 1.0])"}
+ addUserKnob {22 _35 l "<font color=\"red\">⬤</font>" -STARTLINE T "nuke.thisNode().knob(\"color_5\").setValue(\[1, 0, 0, 1.0])"}
+ addUserKnob {22 _45 l "<font color=\"orange\">⬤</font>" -STARTLINE T "nuke.thisNode().knob(\"color_5\").setValue(\[1, 0.75, 0, 1.0])"}
+ addUserKnob {20 Background}
+ addUserKnob {6 burnIn_backgroundEnable l enable t "Enable a background for the Burn-in text. A background will be applied to each Burn-in field" -STARTLINE}
+ burnIn_backgroundEnable true
+ addUserKnob {19 burnIn_backgroundColor l color t "The background color"}
+ burnIn_backgroundColor {0 0 0 1}
+ addUserKnob {6 burnIn_backgroundColor_panelDropped l "panel dropped state" -STARTLINE +HIDDEN}
+ addUserKnob {7 burnIn_backgroundOpacity l opacity t "The background opacity"}
+ burnIn_backgroundOpacity 1
+ addUserKnob {7 burnIn_backgroundXBorder l x-border t "The distance between the background and the left and right edges of the text. This can be used to adjust the size of the background in the x-direction" R 0 50}
+ burnIn_backgroundXBorder 10
+ addUserKnob {7 burnIn_backgroundYBorder l y-border t "The distance between the background and the top and bottom edges of the text. This can be used to adjust the size of the background in the y-direction" R 0 50}
+ burnIn_backgroundYBorder 5
+ addUserKnob {19 Text_TL_color l color}
+ Text_TL_color {0 0 0 0}
+ addUserKnob {6 Text_TL_color_panelDropped l "panel dropped state" -STARTLINE +HIDDEN}
+}
+ Input {
+  inputs 0
+  name Input1
+  xpos -217
+  ypos 47
+ }
+ Dot {
+  name Dot2
+  xpos -183
+  ypos 98
+ }
+ Text2 {
+  font_size_toolbar 100
+  font_width_toolbar 100
+  font_height_toolbar 100
+  cliptype bbox
+  opacity {{parent.burnIn_opacity}}
+  message "\[python nuke.thisParent().knob(\"topLeft\").value()]"
+  old_expression_markers {{0 -1}
+    }
+  box {{parent.burnIn_xPadding+parent.TLpositionOffset.x} {parent.burnIn_yPadding+parent.TLpositionOffset.y} {"width - (parent.burnIn_xPadding+parent.TLpositionOffset.y)"} {"height - (parent.burnIn_yPadding+parent.TLpositionOffset.y)"}}
+  transforms {{0 2}
+    }
+  cursor_position 50
+  font {[value parent.burnIn_font]}
+  global_font_scale {{parent.burnIn_textScale}}
+  scale {1 1}
+  cursor_initialised true
+  autofit_bbox false
+  initial_cursor_position {{0 1556}
+    }
+  group_animations {{0} imported: 0 selected: items: "root transform/"}
+  animation_layers {{1 11 1024 778 0 0 1 1 0 0 0 0}
+    }
+  enable_background {{parent.burnIn_backgroundEnable}}
+  background_color {{parent.burnIn_backgroundColor} {parent.burnIn_backgroundColor} {parent.burnIn_backgroundColor} {parent.burnIn_backgroundColor}}
+  background_opacity {{burnIn_backgroundOpacity}}
+  background_border_x {{parent.burnIn_backgroundXBorder}}
+  background_border_y {{parent.burnIn_backgroundYBorder}}
+  name Text_TL
+  xpos -217
+  ypos 148
+ }
+ Text2 {
+  font_size_toolbar 100
+  font_width_toolbar 100
+  font_height_toolbar 100
+  cliptype bbox
+  opacity {{parent.burnIn_opacity}}
+  message "\[python nuke.thisParent().knob(\"topMiddle\").value()]"
+  old_expression_markers {{0 -1}
+    }
+  box {{parent.burnIn_xPadding+parent.TMpositionOffset.x} {parent.burnIn_yPadding+parent.TMpositionOffset.y} {"width - (parent.burnIn_xPadding+parent.TMpositionOffset.x)"} {"height - (parent.burnIn_yPadding+parent.TMpositionOffset.y)"}}
+  xjustify center
+  transforms {{0 2}
+    }
+  cursor_position 52
+  font {[value parent.burnIn_font]}
+  global_font_scale {{parent.burnIn_textScale}}
+  scale {1 1}
+  center {1024 778}
+  cursor_initialised true
+  autofit_bbox false
+  initial_cursor_position {{0 1556}
+    }
+  group_animations {{0} imported: 0 selected: 0 items: "root transform"}
+  animation_layers {{1 11 1024 778 0 0 1 1 0 0 0 0}
+    }
+  enable_background {{parent.burnIn_backgroundEnable}}
+  background_color {{parent.burnIn_backgroundColor} {parent.burnIn_backgroundColor} {parent.burnIn_backgroundColor} {parent.burnIn_backgroundColor}}
+  background_opacity {{burnIn_backgroundOpacity}}
+  background_border_x {{parent.burnIn_backgroundXBorder}}
+  background_border_y {{parent.burnIn_backgroundYBorder}}
+  name Text_TM
+  xpos -53
+  ypos 148
+ }
+ Text2 {
+  font_size_toolbar 100
+  font_width_toolbar 100
+  font_height_toolbar 100
+  cliptype bbox
+  opacity {{parent.burnIn_opacity}}
+  message "\[python nuke.thisParent().knob(\"topRight\").value()]"
+  old_expression_markers {{0 -1}
+    }
+  box {{parent.burnIn_xPadding+parent.TRpositionOffset.x} {parent.burnIn_yPadding+parent.TRpositionOffset.y} {"width - (parent.burnIn_xPadding+parent.TRpositionOffset.x)"} {"height - (parent.burnIn_yPadding+parent.TRpositionOffset.y)"}}
+  xjustify right
+  transforms {{0 2}
+    }
+  cursor_position 51
+  font {[value parent.burnIn_font]}
+  global_font_scale {{parent.burnIn_textScale}}
+  scale {1 1}
+  cursor_initialised true
+  autofit_bbox false
+  initial_cursor_position {{0 1556}
+    }
+  group_animations {{0} imported: 0 selected: items: "root transform/"}
+  animation_layers {{1 11 1024 778 0 0 1 1 0 0 0 0}
+    }
+  enable_background {{parent.burnIn_backgroundEnable}}
+  background_color {{parent.burnIn_backgroundColor} {parent.burnIn_backgroundColor} {parent.burnIn_backgroundColor} {parent.burnIn_backgroundColor}}
+  background_opacity {{burnIn_backgroundOpacity}}
+  background_border_x {{parent.burnIn_backgroundXBorder}}
+  background_border_y {{parent.burnIn_backgroundYBorder}}
+  name Text_TR
+  xpos 123
+  ypos 148
+ }
+ Text2 {
+  font_size_toolbar 100
+  font_width_toolbar 100
+  font_height_toolbar 100
+  cliptype bbox
+  opacity {{parent.burnIn_opacity}}
+  message "\[python nuke.thisParent().knob(\"bottomLeft\").value()]"
+  old_expression_markers {{0 -1}
+    }
+  box {{parent.burnIn_xPadding+parent.BLpositionOffset.x} {parent.burnIn_yPadding+parent.BLpositionOffset.y} {"width - (parent.burnIn_xPadding+parent.BLpositionOffset.x)"} {"height - (parent.burnIn_yPadding+parent.BLpositionOffset.y)"}}
+  yjustify bottom
+  transforms {{0 2}
+    }
+  cursor_position 53
+  font {[value parent.burnIn_font]}
+  global_font_scale {{parent.burnIn_textScale}}
+  scale {1 1}
+  cursor_initialised true
+  autofit_bbox false
+  initial_cursor_position {{0 1556}
+    }
+  group_animations {{0} imported: 0 selected: items: "root transform/"}
+  animation_layers {{1 11 1024 778 0 0 1 1 0 0 0 0}
+    }
+  enable_background {{parent.burnIn_backgroundEnable}}
+  background_color {{parent.burnIn_backgroundColor} {parent.burnIn_backgroundColor} {parent.burnIn_backgroundColor} {parent.burnIn_backgroundColor}}
+  background_opacity {{burnIn_backgroundOpacity}}
+  background_border_x {{parent.burnIn_backgroundXBorder}}
+  background_border_y {{parent.burnIn_backgroundYBorder}}
+  name Text_BL
+  xpos -218
+  ypos 244
+ }
+ Text2 {
+  font_size_toolbar 100
+  font_width_toolbar 100
+  font_height_toolbar 100
+  cliptype bbox
+  opacity {{parent.burnIn_opacity}}
+  message "\[python nuke.thisParent().knob(\"bottomMiddle\").value()]"
+  old_expression_markers {{0 -1}
+    }
+  box {{parent.burnIn_xPadding+parent.BMpositionOffset.x} {parent.burnIn_yPadding+parent.BMpositionOffset.y} {"width - (parent.burnIn_xPadding+parent.BMpositionOffset.x)"} {"height - (parent.burnIn_yPadding+parent.BMpositionOffset.y)"}}
+  xjustify center
+  yjustify bottom
+  transforms {{0 2}
+    }
+  cursor_position 55
+  font {[value parent.burnIn_font]}
+  global_font_scale {{parent.burnIn_textScale}}
+  scale {1 1}
+  cursor_initialised true
+  autofit_bbox false
+  initial_cursor_position {{0 1556}
+    }
+  group_animations {{0} imported: 0 selected: items: "root transform/"}
+  animation_layers {{1 11 1024 778 0 0 1 1 0 0 0 0}
+    }
+  color 0
+  enable_background {{parent.burnIn_backgroundEnable}}
+  background_color {{parent.burnIn_backgroundColor} {parent.burnIn_backgroundColor} {parent.burnIn_backgroundColor} {parent.burnIn_backgroundColor}}
+  background_opacity {{burnIn_backgroundOpacity}}
+  background_border_x {{parent.burnIn_backgroundXBorder}}
+  background_border_y {{parent.burnIn_backgroundYBorder}}
+  name Text_BM
+  xpos -53
+  ypos 244
+ }
+ Text2 {
+  font_size_toolbar 100
+  font_width_toolbar 100
+  font_height_toolbar 100
+  cliptype bbox
+  opacity {{parent.burnIn_opacity}}
+  message "\[python nuke.thisParent().knob(\"bottomRight\").value()]"
+  old_expression_markers {{0 -1}
+    }
+  box {{parent.burnIn_xPadding+parent.BRpositionOffset.x} {parent.burnIn_yPadding+parent.BRpositionOffset.y} {"width - (parent.burnIn_xPadding+parent.BRpositionOffset.x)"} {"height - (parent.burnIn_yPadding+parent.BRpositionOffset.y)"}}
+  xjustify right
+  yjustify bottom
+  transforms {{0 2}
+    }
+  cursor_position 54
+  font {[value parent.burnIn_font]}
+  global_font_scale {{parent.burnIn_textScale}}
+  scale {1 1}
+  cursor_initialised true
+  autofit_bbox false
+  initial_cursor_position {{0 1556}
+    }
+  group_animations {{0} imported: 0 selected: items: "root transform/"}
+  animation_layers {{1 11 1024 778 0 0 1 1 0 0 0 0}
+    }
+  enable_background {{parent.burnIn_backgroundEnable}}
+  background_color {{parent.burnIn_backgroundColor} {parent.burnIn_backgroundColor} {parent.burnIn_backgroundColor} {parent.burnIn_backgroundColor}}
+  background_opacity {{burnIn_backgroundOpacity}}
+  background_border_x {{parent.burnIn_backgroundXBorder}}
+  background_border_y {{parent.burnIn_backgroundYBorder}}
+  name Text_BR
+  xpos 128
+  ypos 244
+ }
+ Output {
+  name Output1
+  xpos 128
+  ypos 330
+ }
+end_group
