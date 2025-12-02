@@ -17,56 +17,56 @@ Gizmo {
  addUserKnob {1 topLeft l "top left"}
  addUserKnob {41 color T Text_TL.color}
  addUserKnob {12 TLpositionOffset l "position offset"}
- addUserKnob {22 col_TL l "<font color=\"yellow\">⬤</font>" T "nuke.thisNode().knob(\"color\").setValue(\[0.87, 1.0, 0, 1.0])" +STARTLINE}
- addUserKnob {22 _1 l "<font color=\"purple\">⬤</font>" -STARTLINE T "nuke.thisNode().knob(\"color\").setValue(\[0.87, 0, 1, 1.0])"}
- addUserKnob {22 _2 l "<font color=\"green\">⬤</font>" -STARTLINE T "nuke.thisNode().knob(\"color\").setValue(\[0, 1.0, 0.25, 1.0])"}
- addUserKnob {22 _3 l "<font color=\"red\">⬤</font>" -STARTLINE T "nuke.thisNode().knob(\"color\").setValue(\[1, 0, 0, 1.0])"}
- addUserKnob {22 _4 l "<font color=\"orange\">⬤</font>" -STARTLINE T "nuke.thisNode().knob(\"color\").setValue(\[1, 0.75, 0, 1.0])"}
+ addUserKnob {22 col_TL l "<font color=\"yellow\">⬤</font>" T "nuke.tcl('knob color {0.87 1.0 0 1.0}')" +STARTLINE}
+ addUserKnob {22 _1 l "<font color=\"purple\">⬤</font>" -STARTLINE T "nuke.tcl('knob color {0.87 0 1 1.0}')"}
+ addUserKnob {22 _2 l "<font color=\"green\">⬤</font>" -STARTLINE T "nuke.tcl('knob color {0 1.0 0.25 1.0}')"}
+ addUserKnob {22 _3 l "<font color=\"red\">⬤</font>" -STARTLINE T "nuke.tcl('knob color {1 0 0 1.0}')"}
+ addUserKnob {22 _4 l "<font color=\"blue\">⬤</font>" -STARTLINE T "nuke.tcl('knob color {0 0.1 1 1.0}')"}
  addUserKnob {26 ""}
  addUserKnob {1 topMiddle l "top middle"}
  addUserKnob {41 color_1 l color T Text_TM.color}
  addUserKnob {12 TMpositionOffset l "position offset"}
- addUserKnob {22 col_TL1 l "<font color=\"yellow\">⬤</font>" T "nuke.thisNode().knob(\"color_1\").setValue(\[0.87, 1.0, 0, 1.0])" +STARTLINE}
- addUserKnob {22 _11 l "<font color=\"purple\">⬤</font>" -STARTLINE T "nuke.thisNode().knob(\"color_1\").setValue(\[0.87, 0, 1, 1.0])"}
- addUserKnob {22 _21 l "<font color=\"green\">⬤</font>" -STARTLINE T "nuke.thisNode().knob(\"color_1\").setValue(\[0, 1.0, 0.25, 1.0])"}
- addUserKnob {22 _31 l "<font color=\"red\">⬤</font>" -STARTLINE T "nuke.thisNode().knob(\"color_1\").setValue(\[1, 0, 0, 1.0])"}
- addUserKnob {22 _41 l "<font color=\"orange\">⬤</font>" -STARTLINE T "nuke.thisNode().knob(\"color_1\").setValue(\[1, 0.75, 0, 1.0])"}
+ addUserKnob {22 col_TL1 l "<font color=\"yellow\">⬤</font>" T "nuke.tcl('knob color_1 {0.87 1.0 0 1.0}')" +STARTLINE}
+ addUserKnob {22 _11 l "<font color=\"purple\">⬤</font>" -STARTLINE T "nuke.tcl('knob color_1 {0.87 0 1 1.0}')"}
+ addUserKnob {22 _21 l "<font color=\"green\">⬤</font>" -STARTLINE T "nuke.tcl('knob color_1 {0 1.0 0.25 1.0}')"}
+ addUserKnob {22 _31 l "<font color=\"red\">⬤</font>" -STARTLINE T "nuke.tcl('knob color_1 {1 0 0 1.0}')"}
+ addUserKnob {22 _41 l "<font color=\"blue\">⬤</font>" -STARTLINE T "nuke.tcl('knob color_1 {0 0.1 1 1.0}')"}
  addUserKnob {26 ""}
  addUserKnob {1 topRight l "top right"}
  addUserKnob {41 color_2 l color T Text_TR.color}
  addUserKnob {12 TRpositionOffset l "position offset"}
- addUserKnob {22 col_2 l "<font color=\"yellow\">⬤</font>" T "nuke.thisNode().knob(\"color_2\").setValue(\[0.87, 1.0, 0, 1.0])" +STARTLINE}
- addUserKnob {22 _12 l "<font color=\"purple\">⬤</font>" -STARTLINE T "nuke.thisNode().knob(\"color_2\").setValue(\[0.87, 0, 1, 1.0])"}
- addUserKnob {22 _22 l "<font color=\"green\">⬤</font>" -STARTLINE T "nuke.thisNode().knob(\"color_2\").setValue(\[0, 1.0, 0.25, 1.0])"}
- addUserKnob {22 _32 l "<font color=\"red\">⬤</font>" -STARTLINE T "nuke.thisNode().knob(\"color_2\").setValue(\[1, 0, 0, 1.0])"}
- addUserKnob {22 _42 l "<font color=\"orange\">⬤</font>" -STARTLINE T "nuke.thisNode().knob(\"color_2\").setValue(\[1, 0.75, 0, 1.0])"}
+ addUserKnob {22 col_2 l "<font color=\"yellow\">⬤</font>" T "nuke.tcl('knob color_2 {0.87 1.0 0 1.0}')" +STARTLINE}
+ addUserKnob {22 _12 l "<font color=\"purple\">⬤</font>" -STARTLINE T "nuke.tcl('knob color_2 {0.87 0 1 1.0}')"}
+ addUserKnob {22 _22 l "<font color=\"green\">⬤</font>" -STARTLINE T "nuke.tcl('knob color_2 {0 1.0 0.25 1.0}')"}
+ addUserKnob {22 _32 l "<font color=\"red\">⬤</font>" -STARTLINE T "nuke.tcl('knob color_2 {1 0 0 1.0}')"}
+ addUserKnob {22 _42 l "<font color=\"blue\">⬤</font>" -STARTLINE T "nuke.tcl('knob color_2 {0 0.1 1 1.0}')"}
  addUserKnob {26 ""}
  addUserKnob {1 bottomLeft l "bottom left"}
  addUserKnob {41 color_3 l color T Text_BL.color}
  addUserKnob {12 BLpositionOffset l "position offset"}
- addUserKnob {22 col_3 l "<font color=\"yellow\">⬤</font>" T "nuke.thisNode().knob(\"color_3\").setValue(\[0.87, 1.0, 0, 1.0])" +STARTLINE}
- addUserKnob {22 _13 l "<font color=\"purple\">⬤</font>" -STARTLINE T "nuke.thisNode().knob(\"color_3\").setValue(\[0.87, 0, 1, 1.0])"}
- addUserKnob {22 _23 l "<font color=\"green\">⬤</font>" -STARTLINE T "nuke.thisNode().knob(\"color_3\").setValue(\[0, 1.0, 0.25, 1.0])"}
- addUserKnob {22 _33 l "<font color=\"red\">⬤</font>" -STARTLINE T "nuke.thisNode().knob(\"color_3\").setValue(\[1, 0, 0, 1.0])"}
- addUserKnob {22 _43 l "<font color=\"orange\">⬤</font>" -STARTLINE T "nuke.thisNode().knob(\"color_3\").setValue(\[1, 0.75, 0, 1.0])"}
+ addUserKnob {22 col_3 l "<font color=\"yellow\">⬤</font>" T "nuke.tcl('knob color_3 {0.87 1.0 0 1.0}')" +STARTLINE}
+ addUserKnob {22 _13 l "<font color=\"purple\">⬤</font>" -STARTLINE T "nuke.tcl('knob color_3 {0.87 0 1 1.0}')"}
+ addUserKnob {22 _23 l "<font color=\"green\">⬤</font>" -STARTLINE T "nuke.tcl('knob color_3 {0 1.0 0.25 1.0}')"}
+ addUserKnob {22 _33 l "<font color=\"red\">⬤</font>" -STARTLINE T "nuke.tcl('knob color_3 {1 0 0 1.0}')"}
+ addUserKnob {22 _43 l "<font color=\"blue\">⬤</font>" -STARTLINE T "nuke.tcl('knob color_3 {0 0.1 1 1.0}')"}
  addUserKnob {26 ""}
  addUserKnob {1 bottomMiddle l "bottom middle"}
  addUserKnob {41 color_4 l color T Text_BM.color}
  addUserKnob {12 BMpositionOffset l "position offset"}
- addUserKnob {22 col_4 l "<font color=\"yellow\">⬤</font>" T "nuke.thisNode().knob(\"color_4\").setValue(\[0.87, 1.0, 0, 1.0])" +STARTLINE}
- addUserKnob {22 _14 l "<font color=\"purple\">⬤</font>" -STARTLINE T "nuke.thisNode().knob(\"color_4\").setValue(\[0.87, 0, 1, 1.0])"}
- addUserKnob {22 _24 l "<font color=\"green\">⬤</font>" -STARTLINE T "nuke.thisNode().knob(\"color_4\").setValue(\[0, 1.0, 0.25, 1.0])"}
- addUserKnob {22 _34 l "<font color=\"red\">⬤</font>" -STARTLINE T "nuke.thisNode().knob(\"color_4\").setValue(\[1, 0, 0, 1.0])"}
- addUserKnob {22 _44 l "<font color=\"orange\">⬤</font>" -STARTLINE T "nuke.thisNode().knob(\"color_4\").setValue(\[1, 0.75, 0, 1.0])"}
+ addUserKnob {22 col_4 l "<font color=\"yellow\">⬤</font>" T "nuke.tcl('knob color_4 {0.87 1.0 0 1.0}')" +STARTLINE}
+ addUserKnob {22 _14 l "<font color=\"purple\">⬤</font>" -STARTLINE T "nuke.tcl('knob color_4 {0.87 0 1 1.0}')"}
+ addUserKnob {22 _24 l "<font color=\"green\">⬤</font>" -STARTLINE T "nuke.tcl('knob color_4 {0 1.0 0.25 1.0}')"}
+ addUserKnob {22 _34 l "<font color=\"red\">⬤</font>" -STARTLINE T "nuke.tcl('knob color_4 {1 0 0 1.0}')"}
+ addUserKnob {22 _44 l "<font color=\"blue\">⬤</font>" -STARTLINE T "nuke.tcl('knob color_4 {0 0.1 1 1.0}')"}
  addUserKnob {26 ""}
  addUserKnob {1 bottomRight l "bottom right"}
  addUserKnob {41 color_5 l color T Text_BR.color}
  addUserKnob {12 BRpositionOffset l "position offset"}
- addUserKnob {22 col_5 l "<font color=\"yellow\">⬤</font>" T "nuke.thisNode().knob(\"color_5\").setValue(\[0.87, 1.0, 0, 1.0])" +STARTLINE}
- addUserKnob {22 _15 l "<font color=\"purple\">⬤</font>" -STARTLINE T "nuke.thisNode().knob(\"color_5\").setValue(\[0.87, 0, 1, 1.0])"}
- addUserKnob {22 _25 l "<font color=\"green\">⬤</font>" -STARTLINE T "nuke.thisNode().knob(\"color_5\").setValue(\[0, 1.0, 0.25, 1.0])"}
- addUserKnob {22 _35 l "<font color=\"red\">⬤</font>" -STARTLINE T "nuke.thisNode().knob(\"color_5\").setValue(\[1, 0, 0, 1.0])"}
- addUserKnob {22 _45 l "<font color=\"orange\">⬤</font>" -STARTLINE T "nuke.thisNode().knob(\"color_5\").setValue(\[1, 0.75, 0, 1.0])"}
+ addUserKnob {22 col_5 l "<font color=\"yellow\">⬤</font>" T "nuke.tcl('knob color_5 {0.87 1.0 0 1.0}')" +STARTLINE}
+ addUserKnob {22 _15 l "<font color=\"purple\">⬤</font>" -STARTLINE T "nuke.tcl('knob color_5 {0.87 0 1 1.0}')"}
+ addUserKnob {22 _25 l "<font color=\"green\">⬤</font>" -STARTLINE T "nuke.tcl('knob color_5 {0 1.0 0.25 1.0}')"}
+ addUserKnob {22 _35 l "<font color=\"red\">⬤</font>" -STARTLINE T "nuke.tcl('knob color_5 {1 0 0 1.0}')"}
+ addUserKnob {22 _45 l "<font color=\"blue\">⬤</font>" -STARTLINE T "nuke.tcl('knob color_5 {0 0.1 1 1.0}')"}
  addUserKnob {20 Background}
  addUserKnob {6 burnIn_backgroundEnable l enable t "Enable a background for the Burn-in text. A background will be applied to each Burn-in field" -STARTLINE}
  burnIn_backgroundEnable true
@@ -100,7 +100,7 @@ Gizmo {
   font_height_toolbar 100
   cliptype bbox
   opacity {{parent.burnIn_opacity}}
-  message "\[python nuke.thisParent().knob(\"topLeft\").value()]"
+  message "\[knob topLeft]"
   old_expression_markers {{0 -1}
     }
   box {{parent.burnIn_xPadding+parent.TLpositionOffset.x} {parent.burnIn_yPadding+parent.TLpositionOffset.y} {"width - (parent.burnIn_xPadding+parent.TLpositionOffset.y)"} {"height - (parent.burnIn_yPadding+parent.TLpositionOffset.y)"}}
@@ -132,7 +132,7 @@ Gizmo {
   font_height_toolbar 100
   cliptype bbox
   opacity {{parent.burnIn_opacity}}
-  message "\[python nuke.thisParent().knob(\"topMiddle\").value()]"
+  message "\[knob topMiddle]"
   old_expression_markers {{0 -1}
     }
   box {{parent.burnIn_xPadding+parent.TMpositionOffset.x} {parent.burnIn_yPadding+parent.TMpositionOffset.y} {"width - (parent.burnIn_xPadding+parent.TMpositionOffset.x)"} {"height - (parent.burnIn_yPadding+parent.TMpositionOffset.y)"}}
@@ -166,7 +166,7 @@ Gizmo {
   font_height_toolbar 100
   cliptype bbox
   opacity {{parent.burnIn_opacity}}
-  message "\[python nuke.thisParent().knob(\"topRight\").value()]"
+  message "\[knob topRight]"
   old_expression_markers {{0 -1}
     }
   box {{parent.burnIn_xPadding+parent.TRpositionOffset.x} {parent.burnIn_yPadding+parent.TRpositionOffset.y} {"width - (parent.burnIn_xPadding+parent.TRpositionOffset.x)"} {"height - (parent.burnIn_yPadding+parent.TRpositionOffset.y)"}}
@@ -199,7 +199,7 @@ Gizmo {
   font_height_toolbar 100
   cliptype bbox
   opacity {{parent.burnIn_opacity}}
-  message "\[python nuke.thisParent().knob(\"bottomLeft\").value()]"
+  message "\[knob bottomLeft]"
   old_expression_markers {{0 -1}
     }
   box {{parent.burnIn_xPadding+parent.BLpositionOffset.x} {parent.burnIn_yPadding+parent.BLpositionOffset.y} {"width - (parent.burnIn_xPadding+parent.BLpositionOffset.x)"} {"height - (parent.burnIn_yPadding+parent.BLpositionOffset.y)"}}
@@ -232,7 +232,7 @@ Gizmo {
   font_height_toolbar 100
   cliptype bbox
   opacity {{parent.burnIn_opacity}}
-  message "\[python nuke.thisParent().knob(\"bottomMiddle\").value()]"
+  message "\[knob bottomMiddle]"
   old_expression_markers {{0 -1}
     }
   box {{parent.burnIn_xPadding+parent.BMpositionOffset.x} {parent.burnIn_yPadding+parent.BMpositionOffset.y} {"width - (parent.burnIn_xPadding+parent.BMpositionOffset.x)"} {"height - (parent.burnIn_yPadding+parent.BMpositionOffset.y)"}}
@@ -267,7 +267,7 @@ Gizmo {
   font_height_toolbar 100
   cliptype bbox
   opacity {{parent.burnIn_opacity}}
-  message "\[python nuke.thisParent().knob(\"bottomRight\").value()]"
+  message "\[knob bottomRight]"
   old_expression_markers {{0 -1}
     }
   box {{parent.burnIn_xPadding+parent.BRpositionOffset.x} {parent.burnIn_yPadding+parent.BRpositionOffset.y} {"width - (parent.burnIn_xPadding+parent.BRpositionOffset.x)"} {"height - (parent.burnIn_yPadding+parent.BRpositionOffset.y)"}}
